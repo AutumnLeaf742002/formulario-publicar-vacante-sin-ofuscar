@@ -1,0 +1,117 @@
+@font-face {
+
+
+
+    font-family: 'Montserrat';
+
+    src: url('fonts/montserrat.ttf') format('truetype');
+
+}  
+
+*{
+
+
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Montserrat';
+
+}
+
+
+
+
+
+:root{
+
+
+
+--color_principal: #f6a02a;
+
+--color_naranja_claro: #f4b808;
+
+--color_gris: #44494b;
+
+--color_blanco: #ffffff;
+
+--color_fondo: #f2f2f2;
+
+--color_red: #eb1a2d;
+
+}
+
+
+
+body{
+
+
+
+    position: relative;
+
+}
+
+
+
+ul, ol{
+
+
+
+    list-style: none;
+
+}
+
+
+
+#loading{
+
+
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.61);
+
+    position: absolute;
+
+    z-index: 100;
+
+    display: none;
+
+}
+
+.btn-loading{
+
+    position: relative;
+}
+
+.loading-svg{
+
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    animation-name: btn-loading-circle;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn-loading-circle {
+    
+    0%{
+
+        transform: rotate(0deg);
+    }
+
+    100%{
+
+        transform: rotate(360deg);
+    }
+}

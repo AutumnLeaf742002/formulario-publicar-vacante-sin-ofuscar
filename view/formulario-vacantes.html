@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta charset="UTF-8">
+
+  <meta property="og:image" content="https://1.bp.blogspot.com/--02kItvc6rE/YPdizEV04TI/AAAAAAABCdY/VG8jytjbQOgKyBry2oshqJAAWe88LdjwwCPcBGAYYCw/s1472/vacante-disponible.jpg">
+
+  <title>Publicar Vacante</title>
+
+  <link rel="stylesheet"  type="text/css" href="../styles/config.css">
+
+  <link rel="stylesheet" type="text/css" href="../styles/formulario-vacantes.css">
+
+  <link rel="shortcut icon" href="../img/logo-nuevo-para-redes-sociales.png" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+
+
+</head>
+
+<body>
+
+
+
+  <header>
+
+
+
+    <div class="c-logo">
+
+      <img src="../img/logo-nuevo-mi-empleo-rd-borde-blanco.png" alt="logo">
+
+    </div>
+
+    <a class="login-btn" href="login.html">Iniciar sesión</a>
+
+
+
+  </header>
+
+
+
+  <div class="center">
+
+
+
+
+
+    <div class="form" id="form_publicar_vacante">
+
+
+
+      <h1 class="titulo">Formulario para publicar vacantes</h1>
+
+<br>
+
+      <h5 style="color: #44494b";>En caso de presentar algun error, favor tomar captura y enviar a soporte@site.miempleord.com</h5>
+
+
+
+      <div class="c-input">
+
+        <input maxlength="100" id="nombre_empresa" class="input custom-input input-required" type="text" required>
+
+        <label class="label">Nombre de la Empresa *</label>
+
+      </div>
+
+
+
+      <div class="c-input">
+
+        <input maxlength="100" id="provincia" class="input custom-input input-required" type="text" required>
+
+        <label class="label" for="provincia">Provincia / Sector *</label>
+
+      </div>
+
+      
+
+      <div class="c-input">
+
+        <input maxlength="100" id="direccion" class="input custom-input input-required" type="text" required>
+
+        <label class="label" for="direccion">Dirección / Ubicación *</label>
+
+      </div>
+
+      
+
+      <label class="label-2" for="sexo">Sexo *</label>
+
+
+
+      <select id="sexo" class="select input-required" required>
+
+        <option value="">Seleccione</option>
+
+        <option value="1">Masculino</option>
+
+        <option value="2">Femenino</option>
+
+        <option value="3">Ambos Sexos</option>
+
+      </select>
+
+
+
+      
+
+      <label class="label-2" for="nacionalidad">Nacionalidad *</label>
+
+      <select class="select input-required" id="nacionalidad" required>
+
+        <option value="">Seleccione</option>
+
+        <option value="1">Dominicano/a</option>
+
+        <option value="2">Extranjero/a</option>
+
+        <option value="3">Ambos</option>
+
+      </select>
+
+     
+
+
+
+      <div class="c-input">
+
+        <input maxlength="100" class="input custom-input input-required" type="text" id="posicion" required>
+
+        <label class="label" for="posicion">Posición requerida *</label>
+
+      </div>
+
+
+
+      <label class="label-2" for="nivel-estudio">Nivel de Estudio *</label>
+
+
+
+      <select class="select input-required" id="nivel_estudio" required>
+
+        <option value="">Seleccione</option>
+
+        <option value="1">Nivel básico</option>
+
+        <option value="2">Bachiller</option>
+
+        <option value="3">Técnico</option>
+
+        <option value="4">Estudiante universitario</option>
+
+        <option value="5">Profesional</option>
+
+        <option value="6">Sin Experiencia</option>
+
+        <option value="7">Con Experiencia</option>
+
+      </select>
+
+
+
+      <div class="c-input">
+
+        <textarea maxlength="4000" class="input custom-input input-required" id="requisitos" required></textarea>
+
+        <label class="label" for="requisitos">Requisitos *</label>
+
+      </div>
+
+
+
+      <div class="c-input">
+
+        <textarea maxlength="4000" class="input custom-input input-required" id="beneficios" required></textarea>
+
+        <label class="label" for="beneficios">Beneficios *</label>
+
+      </div>
+
+
+
+      <div class="c-input">
+
+        <input maxlength="50" class="input custom-input input-required" type="mail" id="correo" required>
+
+        <label class="label" for="correo">Correo electrónico para el aplicante *</label>
+
+      </div>
+
+
+
+      <div class="c-input">
+
+        <input maxlength="30" class="input invalid-input" type="text" id="telefono" placeholder="s">
+
+        <label class="label" for="telefono">Número telefónico</label>
+
+      </div>
+
+
+
+      <label class="label-2" for="fecha">Fecha límite para aplicar</label>
+
+
+
+      <div class="c-input">
+
+        <input maxlength="10" class="input" type="date" id="fecha">
+
+      </div>
+
+
+
+      <label class="label-2" for="Categoria">Categoria *</label>
+
+      <select maxlength="50" class="select input-required" id="categoria" required>
+
+              <option value="" selected>Seleccionar</option>
+
+              <option value="Abogado">Abogado</option>
+
+              <option value="Administración de empresas">Administración de empresas</option>
+
+              <option value="Almacen">Almacen</option>
+
+              <option value="Analista">Analista</option>
+
+              <option value="Analista de Calidad">Analista de Calidad</option>
+
+              <option value="Analista de control de cobros">Analista de control de cobros</option>
+
+              <option value="Animadoras">Animadoras</option>
+
+              <option value="Arquitectura">Arquitectura</option>
+
+              <option value="Asesor">Asesor</option>
+
+              <option value="Asistente">Asistente</option>
+
+              <option value="Asistente administrativa">Asistente administrativa</option>
+
+              <option value="Atención al Cliente">Atención al Cliente</option>
+
+              <option value="Auditor">Auditor</option>
+
+              <option value="Auxiliar">Auxiliar</option>
+
+              <option value="Ayudante">Ayudante</option>
+
+              <option value="Belleza">Belleza</option>
+
+              <option value="Cafetería">Cafetería</option>
+
+              <option value="Cajero">Cajero</option>
+
+              <option value="Call Center">Call Center</option>
+
+              <option value="Chef">Chef</option>
+
+              <option value="Clínica">Clínica</option>
+
+              <option value="Cobros">Cobros</option>
+
+              <option value="Cocina">Cocina</option>
+
+              <option value="Comunicación">Comunicación</option>
+
+              <option value="Conserje">Conserje</option>
+
+              <option value="Contabilidad">Contabilidad</option>
+
+              <option value="Derecho">Derecho</option>
+
+              <option value="Diseñador">Diseñador</option>
+
+              <option value="Diseño de interiores">Diseño de interiores</option>
+
+              <option value="Diversas Carreras">Diversas Carreras</option>
+
+              <option value="Economía">Economía</option>
+
+              <option value="Ejecutivo">Ejecutivo</option>
+
+              <option value="Electricistas">Electricistas</option>
+
+              <option value="Electromecanico">Electromecanico</option>
+
+              <option value="Enfermeria">Enfermeria</option>
+
+              <option value="Farmacia">Farmacia</option>
+
+              <option value="Gerente">Gerente</option>
+
+              <option value="Gondolero">Gondolero</option>
+
+              <option value="Ingeniería Civil">Ingeniería Civil</option>
+
+              <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+
+              <option value="Ingeniería en sistemas">Ingeniería en sistemas</option>
+
+              <option value="Inglés">Inglés</option>
+
+              <option value="Marketing">Marketing</option>
+
+              <option value="Mecanicos">Mecanicos</option>
+
+              <option value="Mensajero">Mensajero</option>
+
+              <option value="Negocios">Negocios</option>
+
+              <option value="Negocios Internacionales">Negocios Internacionales</option>
+
+              <option value="Odontología">Odontología</option>
+
+              <option value="Operarios">Operarios</option>
+
+              <option value="Panadería">Panadería</option>
+
+              <option value="Pasante">Pasante</option>
+
+              <option value="Personal de Servicios">Personal de Servicios</option>
+
+              <option value="Programador">Programador</option>
+
+              <option value="Psicología">Psicología</option>
+
+              <option value="Publicidad">Publicidad</option>
+
+              <option value="Recepciónista">Recepcionista</option>
+
+              <option value="Recursos Humanos">Recursos Humanos</option>
+
+              <option value="Seguridad">Seguridad</option>
+
+              <option value="Servicio al Cliente">Servicio al Cliente</option>
+
+              <option value="Servicios">Servicios</option>
+
+              <option value="Servicios Domesticos">Servicios Domesticos</option>
+
+              <option value="Supervisor">Supervisor</option>
+
+              <option value="Tecnico">Tecnico</option>
+
+              <option value="Tecnología">Tecnología</option>
+
+              <option value="Telemarketing">Telemarketing</option>
+
+              <option value="Turismo">Turismo</option>
+
+              <option value="Vendedor">Vendedor</option>
+
+              <option value="area de cobros">area de cobros</option>
+
+              <option value="chofer">chofer</option>
+
+              <option value="diversas vacantes">Diversas vacantes</option>
+
+              <option value="finanzas">Finanzas</option>
+
+              <option value="mercadeo">Mercadeo</option>
+
+              <option value="psicologia indrustrial">psicologia indrustrial</option>
+
+              <option value="sin experiencia">Sin experiencia</option>
+
+
+
+      </select>
+
+
+
+      <div class="c-input">
+
+        <textarea maxlength="4000" class="input invalid-input" id="comentarios" placeholder="s"></textarea>
+
+        <label class="label">Comentarios adicionales</label>
+
+      </div>
+
+
+
+      <button id="btn_publicar_vacante" class="btn-loading btn-publicar">
+
+        Publicar vacante
+
+      </button>
+
+    <!--pop up-->
+    <p><a href="#" onclick="openPopup()">Ver Políticas de publicacion.</a></p>
+
+    <div class="overlay" id="overlay" style="display: none;">
+      <div class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h1>Incumplimiento de Políticas y Procedimientos</h1>
+        <p>Hacer spam y enviar publicaciones falsas es un incumplimiento grave de nuestras políticas y procedimientos.</p>
+        <p>Nos tomamos en serio la protección de nuestra comunidad y la entrega de contenido valioso y auténtico.</p>
+        <p>Cualquier cuenta que se encuentre enviando spam o publicaciones falsas será sujeta a medidas disciplinarias, que pueden incluir la suspensión temporal o permanente de la cuenta.</p>
+        <p>Si tienes alguna pregunta o necesitas más información, por favor <a href="mailto:soporte@site.miempleord.com">contáctanos</a>.</p>
+      </div>
+    </div>
+    <!--pop up-->
+
+    </div>
+
+
+
+    <br>
+
+    <br>
+
+
+
+  </div>
+
+
+
+  <!--footer-->
+
+  <footer>
+
+    <div class="pie-de-pagina">
+
+      <p>&copy; 2023 by Mi Empleo RD. Todos los derechos reservados.</p>
+
+    </div>
+
+  </footer>
+
+  
+
+  <script type="module" src="../controllers/app.js"></script>
+
+
+
+  <!-- jQuery -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Toastr JS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+  <!--script del pop up-->
+  <script>
+    function openPopup() {
+      var overlay = document.getElementById('overlay');
+      overlay.style.display = 'flex';
+    }
+
+    function closePopup() {
+      var overlay = document.getElementById('overlay');
+      overlay.style.display = 'none';
+    }
+  </script>
+  <!--script del pop up-->
+</body>
+
+</html>

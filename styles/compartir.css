@@ -1,0 +1,270 @@
+body {
+
+    background-color: #f4f4f4;
+    position: relative;
+
+}
+
+html{
+
+    font-size: 18px;
+}
+
+
+
+.share-btn {
+
+    display: inline-block;
+
+    width: 200px;
+
+    padding: 10px 20px;
+
+    background-color: #25D366;
+
+    color: #fff;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    margin-top: 10px;
+
+    transition: background-color 0.3s ease;
+
+}
+
+
+
+.share-btn:hover {
+
+    background-color: #128C7E;
+
+}
+
+
+
+input {
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    margin-top: 10px;
+
+    width: 100%;
+
+}
+
+
+
+button {
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background-color: #0a8dff;
+
+    height: 3rem;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+
+    font-size: 0.9rem;
+
+}
+
+
+
+button:hover {
+
+    background-color: #0077d9;
+
+}
+
+
+
+#btn-volver{
+
+
+
+    background-color: rgb(241, 190, 19);
+
+}
+
+.vacantes-list li{
+
+    width: 100% !important;
+}
+
+.vacantes-list li h3{
+
+    width: 50% !important;
+}
+
+.vacantes-list li p{
+
+    text-align: center;
+    width: 25% !important;
+}
+
+.c-chek{
+
+    width: 25%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.c-chek input{
+
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btn-marcar{
+
+    width: 9.6666666666rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0;
+}
+
+.select-all{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 50px;
+    background-color: white;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.checkbox-select-all{
+    width: 20px !important;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.c-copy-code {
+    display: none;
+    position: fixed;
+    width: 44.44444444rem; /* 800px / 18px */
+    height: 27.77777778rem; /* 500px / 18px */
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #303146;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #eeeeff;
+    padding: 0.55555556rem; /* 10px / 18px */
+    border-radius: 0.55555556rem; /* 10px / 18px */
+}
+
+.c-svg-copy {
+    align-items: center;
+    gap: 0.27777778rem; /* 5px / 18px */
+}
+
+.svg-copy {
+    cursor: pointer;
+    transition: all, 0.1s;
+}
+
+.svg-copy:hover {
+    transform: scale(1.1);
+}
+
+.c-svg-copy {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.code {
+    background-color: #464555;
+    border: none;
+    color: #eeeeff;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border-radius: 0.16666667rem; /* 3px / 18px */
+    padding: 0.55555556rem; /* 10px / 18px */
+    min-height: 22.22222222rem; /* 400px / 18px */
+    margin-top: 0.55555556rem; /* 10px / 18px */
+    font-size: 1rem;
+    border: 0.05555556rem solid #808087; /* 1px / 18px */
+}
+
+.code::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.27777778rem; /* 5px / 18px */
+}
+
+.code::-webkit-scrollbar-thumb {
+    background-color: #eeeeff;
+    border-radius: 0.55555556rem; /* 10px / 18px */
+}
+
+#cAll{
+
+    padding: 20px;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+/* responsive para el cuadro de copiar */
+
+@media screen and (max-width: 850px) {
+    
+    html{
+
+        font-size: 16px !important;
+    }
+}
+@media screen and (max-width: 735px) {
+    
+    html{
+
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width: 650px) {
+    
+    html{
+
+        font-size: 12px !important;
+    }
+}
+@media screen and (max-width: 560px) {
+    
+    .c-copy-code{
+
+        width: 30.44444444rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    
+    .c-copy-code{
+
+        width: 20.44444444rem;
+    }
+    .code{
+
+        font-size: 10px !important;
+    }
+}

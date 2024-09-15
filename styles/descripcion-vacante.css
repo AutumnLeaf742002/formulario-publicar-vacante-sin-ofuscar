@@ -1,0 +1,486 @@
+body{
+
+
+
+  width: 100vw !important;
+
+  overflow-x: hidden;
+
+  position: relative;
+
+}
+
+
+
+::-webkit-scrollbar{
+
+
+
+  display: none;
+
+}
+
+
+
+header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 0.556rem;
+
+  background-color: var(--color_principal);
+
+}
+
+
+
+html {
+
+
+
+  font-size: 18px;
+
+}
+
+
+
+.logo-container img {
+
+  height: 2.222rem;
+
+}
+
+
+
+.logout-container {
+
+  text-align: right;
+
+}
+
+
+
+.logout-button {
+
+  min-width: 5.5555555556rem !important;
+  min-height: 1.77777777778rem !important;
+
+  padding: 0.444rem 0.889rem;
+
+  background-color: var(--color_gris);
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 0.222rem;
+
+  cursor: pointer;
+
+}
+
+
+
+table {
+
+  width: 100%;
+
+  text-align: left;
+
+  border-collapse: collapse;
+}
+
+
+
+.view-form {
+
+  padding: 2.778rem 11.111rem;
+
+}
+
+tr {
+
+  height: 45px !important;
+}
+
+
+
+tr:nth-child(odd) {
+
+  background-color: var(--color_fondo);
+
+}
+
+
+
+tr:nth-child(even) {
+
+  background-color: var(--color_blanco);
+}
+
+th{
+
+  min-width: 16.66666666666667rem;
+  padding-left: 20px;
+}
+
+td{
+
+  width: 100%;
+  word-break: break-word;
+  padding-left: 20px;
+}
+
+
+h1 {
+
+  text-align: center;
+
+  margin-bottom: 0.833rem;
+
+}
+
+
+
+.imagen {
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+
+
+.btn {
+
+  display: block;
+
+  width: 11.111rem;
+
+  height: 2.222rem;
+
+  background-color: var(--color_gris);
+
+  color: white;
+
+  border: none;
+
+  border-radius: 0.222rem;
+
+  font-size: 0.889rem;
+
+  cursor: pointer;
+
+}
+
+
+
+.btn:hover {
+
+  background-color: var(--color_principal);
+
+}
+
+
+
+.btn:active {
+
+  background-color: var(--color_principal);
+
+}
+
+
+
+.buttons {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 1.111rem;
+
+  margin-bottom: 1.389rem;
+
+}
+
+
+
+footer {
+
+  background-color: var(--color_gris); 
+
+  color: var(--color_blanco);
+
+  padding: 1.111rem 0;
+
+  text-align: center;
+
+}
+
+
+
+.pie-de-pagina {
+
+  max-width: 53.333rem;
+
+  margin: 0 auto;
+
+}
+
+
+
+p {
+
+  margin: 0;
+
+}
+
+
+
+.btn-delete{
+
+
+
+  background-color: var(--color_red) !important;
+
+}
+
+
+
+.c-window-delete{
+
+  
+
+  display: none;
+
+  background-color: white;
+
+  width: 33.333333rem;
+
+  height: 12.77777777rem;
+
+  position: fixed;
+
+  left: 50%;
+
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 200;
+
+  border-radius: 0.38888888rem;
+
+}
+
+
+
+.c-principal-messegge{
+
+
+
+  width: 100%;
+
+  height: 2.7777777rem;
+
+  padding: 0.2777777777rem 1.1111111rem;
+
+}
+
+
+
+.c-principal-messegge h1{
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 1.55555555rem;
+
+}
+
+
+
+.c-secondary-messegge{
+
+
+
+  width: 100%;
+
+  height: 5.555555rem;
+
+  background-color: #f6f6f6;
+
+  padding: 1.1111111rem 0.5555555rem;
+
+  border-top: 2px solid rgb(206, 206, 206);
+
+  border-bottom: 2px solid rgb(206, 206, 206);
+
+}
+
+
+
+.c-secondary-messegge p{
+
+
+
+  width: 100%;
+
+  font-size: 1.1111111rem;
+
+}
+
+
+
+.c-btn{
+
+
+
+  padding: 0px 1.1111111rem;
+
+  width: 100%;
+
+  height: 4.4444444rem;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: right;
+
+  gap: 0.38888888rem;
+
+}
+
+.c-arrow-volver{
+
+  width: 100%;
+}
+
+.arrow-volver{
+
+  margin-left: 2.77777777rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+/* responsive designe */
+
+
+
+@media screen and (max-width: 800px){
+
+
+
+  .view-form{
+
+
+
+    width: 100%;
+
+    padding: 20px;
+
+  }
+
+}
+
+
+
+@media screen and (max-width: 550px){
+
+    
+
+  body::-webkit-scrollbar{
+
+
+
+    display: none;
+
+  }
+
+
+
+  html{
+
+
+
+      font-size: 15;
+
+  }
+
+
+
+  .view-form{
+
+
+
+    width: 100%;
+
+    padding: 5px;
+
+  }
+
+
+
+  table{
+
+
+
+    width: 100%;
+
+  }
+
+
+
+  .c-window-delete{
+
+
+
+    width: 20.333333rem;
+
+  }
+
+
+
+  .c-principal-messegge h1{
+
+
+
+    width: 100%;
+
+    font-size: 1.25rem;
+
+  }
+
+
+
+}
+
+
+
+@media screen and (max-width: 400px){
+
+
+
+  html{
+
+
+
+      font-size: 13px;
+
+    }
+
+
+
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta charset="UTF-8">
+
+  <meta property="og:image"
+    content="https://1.bp.blogspot.com/--02kItvc6rE/YPdizEV04TI/AAAAAAABCdY/VG8jytjbQOgKyBry2oshqJAAWe88LdjwwCPcBGAYYCw/s1472/vacante-disponible.jpg">
+
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" type="text/css" href="../styles/tablero.css">
+
+  <link rel="stylesheet" href="../styles/config.css">
+
+  <link rel="shortcut icon" href="../img/logo-nuevo-para-redes-sociales.png" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+</head>
+
+<body>
+
+
+
+  <header>
+
+    <div class="logo-container">
+
+      <img id="logo" src="../img/logo-nuevo-mi-empleo-rd-borde-blanco.png" alt="Logo de la página">
+
+    </div>
+
+    <div class="logout-container">
+
+      <button class="logout-button" onclick="window.open('../shared-blogger/compartir.html', '_blank')">Compartir enlaces</button>
+
+
+      <button id="btn_close_sesion" class="logout-button">Cerrar sesión</button>
+
+    </div>
+
+  </header>
+
+
+
+  <div class="menu">
+
+    <div id="btn_vacantes_nuevas" class="menu-item">Vacantes nuevas</div>
+
+    <div id="btn_vacantes_publicadas" class="menu-item">Vacantes publicada</div>
+
+  </div>
+
+
+
+  <div class="menu-vacantes">
+
+
+
+    <ul class="vacantes-list" id="ul_contain_vacantes">
+
+
+
+      <li>
+
+        <h3>Cargando...</h3>
+
+        <p>Cargando...</p>
+
+        <button class="view-button">Ver vacante</button>
+
+      </li>
+
+
+
+    </ul>
+
+
+
+  </div>
+
+
+
+  <div id="vacantesPublicar" class="vacantes-container">
+
+    <h2>Vacantes para publicar</h2>
+
+    <p>Aquí puedes agregar el contenido para "Vacantes para publicar".</p>
+
+  </div>
+
+
+
+  <!-- <script>
+
+      function toggleVacantes(vacantesId) {
+
+        var vacantesContainer = document.getElementById(vacantesId);
+
+        vacantesContainer.classList.toggle('show');
+
+      }
+
+    </script> -->
+
+  <!--footer-->
+
+  <footer>
+
+    <div class="pie-de-pagina">
+
+      <p>&copy; 2023 by Mi Empleo RD. Todos los derechos reservados.</p>
+
+    </div>
+
+  </footer>
+
+  <!--footer-->
+
+  <script type="module" src="../controllers/app.js"></script>
+
+
+
+  <!-- jQuery -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Toastr JS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+</body>
+
+</html>

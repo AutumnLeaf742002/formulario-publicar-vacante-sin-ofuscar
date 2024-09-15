@@ -1,0 +1,585 @@
+/* styles.css */
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../img/fondo-formulario.png');
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+  }
+
+
+
+  html{
+
+
+
+    font-size: 18px;
+
+  }
+
+  
+
+  header {
+
+    background-color: var(--color_principal);
+
+    color: #fff;
+
+    padding: 0.555555rem;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    height: 3.88888888rem;
+
+  }
+
+  
+
+  .logo {
+
+    font-size: 1.33333333rem;
+
+  }
+
+  
+
+  .login-btn {
+
+    background-color: #fff;
+
+    color: #333;
+
+    padding: 0.27777777rem 0.555555555rem;
+
+    border-radius: 0.27777777rem;
+
+    text-decoration: none;
+
+  }
+
+  
+
+  .center { 
+
+    text-align: center;
+
+    margin-top: 1.11111111rem;
+
+  }
+
+  
+
+  .form {
+
+    max-width: 38.88888888rem;
+
+    padding: 1.1111111rem;
+
+    margin: 0 auto;
+
+    border-radius: 0.555555rem;
+
+    /* background-color: var(--color_fondo); */
+
+    backdrop-filter: blur(100px);
+
+  }
+
+  
+
+  input[type="text"],
+
+  input[type="email"],
+
+  select {
+
+    width: 100%;
+
+    padding: 0.27777777rem;
+
+    border-radius: 0.166666666rem;
+
+  }
+
+  
+
+  textarea {
+
+    width: 100%;
+
+    padding: 0.2777777777rem;
+
+    border-radius: 0.16666666rem;
+
+    border: 0.055555555rem solid #ccc;
+
+  }
+
+  
+
+  input[type="submit"] {
+
+    background-color: #333;
+
+    color: #fff;
+
+    padding: 0.5555555555rem 1.111111111rem;
+
+    border: none;
+
+    border-radius: 0.277777777rem;
+
+    cursor: pointer;
+
+  }
+
+  
+
+  footer {
+
+    background-color: var(--color_gris); 
+
+    color: var(--color_blanco);
+
+    padding: 1.111111111rem 0;
+
+    text-align: center;
+
+  }
+
+  
+
+  .pie-de-pagina {
+
+    max-width: 53.33333333rem; 
+
+    margin: 0 auto;
+
+  }
+
+  
+
+  p {
+
+    margin: 0;
+
+  }
+
+  
+
+  .c-input{
+
+
+
+    position: relative;
+
+    margin: 1.6666666rem;
+
+  }
+
+
+
+  .input{
+
+
+
+    height: 2.5rem;
+
+    font-size: 0.944444444rem;
+
+    width: 100%;
+
+    outline: none;
+
+    border: none;
+
+    border-bottom: 2px solid rgb(207, 207, 207);
+
+    background-color: transparent;
+
+    position: relative;
+
+    z-index: 2;
+
+    transition: all, 0.3s;
+
+    color: white;
+
+  }
+
+
+
+  .label{
+
+
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    left: 0.27777777rem;
+
+    transition: all, 0.2s;
+
+    font-size: 0.94444444rem;
+
+    color: #e1e1e1;
+
+    z-index: 1;
+
+  }
+
+
+
+  .custom-input:focus, .custom-input:valid{
+
+
+
+    background-color: rgba(0, 0, 0, 0.491);
+
+  }
+
+
+
+  .custom-input:focus ~ .label,
+
+  .custom-input:valid ~ .label {
+
+    top: -0.55555555rem !important;
+
+    color: rgb(255, 255, 255);
+
+  }
+
+
+
+  .invalid-input:not(:placeholder-shown) ~ .label {
+
+      
+
+    top: -0.55555555rem !important;
+
+    color: rgb(255, 255, 255);
+
+  }
+
+
+
+  .invalid-input:focus ~ .label{
+
+
+
+    top: -0.55555555rem !important;
+
+    color: rgb(255, 255, 255);
+
+  }
+
+
+
+  .invalid-input:not(:placeholder-shown){
+
+
+
+    background-color: rgba(0, 0, 0, 0.491);
+
+  }
+
+  .invalid-input:focus{
+
+
+
+    background-color: rgba(0, 0, 0, 0.491);
+
+  }
+
+
+
+  .invalid-input::placeholder{
+
+
+
+    color: transparent;
+
+  }
+
+
+
+  .select{
+
+
+
+    height: 2.777777rem;
+
+    width: 100%;
+
+    font-size: 0.9444444rem;
+
+    background-color: rgba(0, 0, 0, 0.491);
+
+    color: white;
+
+  }
+
+
+
+  .label-2{
+
+
+
+    color: white;
+
+    font-size: 0.9444444rem;
+
+  }
+
+
+
+  .titulo{
+
+
+
+    color: white;
+
+  }
+
+
+
+  .btn-publicar{
+
+
+
+    width: 100%;
+
+    height: 2.77777777rem;
+
+    font-size: 1.1111111rem;
+
+    background-color: var(--color_principal) !important;
+
+    transition: background-color, 0.2s;
+
+    border: none;
+
+    cursor: pointer;
+
+    color: white;
+
+    outline: none;
+
+  }
+
+
+
+  .btn-publicar:hover{
+
+
+
+    background-color: #ffc517c0 !important;
+
+  }
+
+
+
+  .c-logo{
+
+
+
+    width: 22.22222222rem;
+
+    height: 3.888888rem;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: -0.277777777rem;
+
+  }
+
+
+
+  .c-logo img{
+
+
+
+    width: 70%;
+
+  }
+
+
+
+  .login-btn{
+
+
+
+    height: 2.77777777rem !important;
+
+    width: 8.33333333rem !important;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 1.11111111rem;
+
+    transition: background-color, 0.2s;
+
+    background-color: var(--color_gris);
+
+    color: white;
+
+  }
+
+
+
+  .login-btn:hover{
+
+
+
+    background-color: #333;
+
+  }
+
+  /*css popup*/
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+  
+    .popup {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 80%;
+      position: relative;
+    }
+  
+    h1 {
+      color: #333;
+    }
+  
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #666;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+  
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      color: #666;
+      font-size: 24px;
+    }
+  
+    @media only screen and (max-width: 600px) {
+      .popup {
+        width: 90%;
+      }
+    }
+    
+  /*css popup*/
+
+  /* mobile design */
+
+
+
+@media screen and (max-width: 550px){
+
+
+
+  *::-webkit-scrollbar{
+
+
+
+    display: none;
+
+  }
+
+
+
+  .login-btn{
+
+
+
+    height: 2.77777777rem !important;
+
+    width: 8.33333333rem !important;
+
+    font-size: 0.8888888rem;
+
+  }
+
+
+
+  html{
+
+
+
+      font-size: 14px;
+
+  }
+
+
+
+}
+
+
+
+@media screen and (max-width: 400px){
+
+
+
+  html{
+
+
+
+      font-size: 12px;
+
+  }
+
+
+
+}

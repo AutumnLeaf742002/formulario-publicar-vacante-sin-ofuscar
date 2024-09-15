@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta property="og:image"
+        content="https://1.bp.blogspot.com/--02kItvc6rE/YPdizEV04TI/AAAAAAABCdY/VG8jytjbQOgKyBry2oshqJAAWe88LdjwwCPcBGAYYCw/s1472/vacante-disponible.jpg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/config.css">
+
+    <link rel="stylesheet" href="../styles/compartir.css">
+
+    <link rel="stylesheet" href="../styles/tablero.css">
+
+    <link rel="shortcut icon" href="../img/logo-nuevo-para-redes-sociales.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <title>Compartir enlaces</title>
+
+</head>
+
+<body>
+
+
+
+    <div id="cAll">
+
+        <h1>Compartir URLs en WhatsApp</h1>
+
+
+        <!--seleccionar todo-->
+        <div class="select-all">
+            <h3>Seleccionar todo</h3>
+            <input class="checkbox-select-all" type="checkbox" id="id_checkbox">
+        </div>
+
+        <!--vacantes a compartir-->
+        <div class="menu-vacantes">
+
+            <ul class="vacantes-list" id="ul_contain_vacantes">
+                <li>
+
+                    <h3>Empresa:Nombre_empresa-solicita-Posicion_requerida-Provincia</h3>
+
+                    <p>Fecha de publicacion (2023/06)</p>
+
+                    <div class="c-chek">
+                        <input type="checkbox">
+                    </div>
+
+                </li>
+                <li>
+
+                    <h3>Empresa:Nombre_empresa-solicita-Posicion_requerida-Provincia</h3>
+
+                    <p>Fecha de publicacion (2023/06)</p>
+
+                    <div class="c-chek">
+                        <input type="checkbox">
+                    </div>
+
+                </li>
+                <li>
+
+                    <h3>Empresa:Nombre_empresa-solicita-Posicion_requerida-Provincia</h3>
+
+                    <p>Fecha de publicacion (2023/06)</p>
+
+                    <div class="c-chek">
+                        <input class="check" type="checkbox">
+                    </div>
+
+                </li>
+            </ul>
+
+        </div>
+        <!--Vacantes a compartir-->
+        <button id="share_btn" class="share-btn btn-loading">Compartir en WhatsApp</button>
+
+        <button id="btn_set_compartida" class="btn-loading btn-marcar">Marcar como compartida</button>
+
+        <button class="share-btn" id="btn-volver" onclick="window.location.href='tablero.html'">
+
+            Volver
+
+        </button>
+
+    </div>
+
+    <!-- section copy code -->
+
+    <div class="c-copy-code" id="copyCode">
+
+        <div class="c-svg-copy">
+
+            <p>
+                Copiar
+            </p>
+
+            <svg class="svg-copy" id="svgCopyText" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-clipboard-check"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+            <path
+                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+            <path
+                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+            </svg>
+        </div>
+
+        <textarea class="code" id="textAreaCode">
+            Cargando...
+        </textarea>
+
+        <div class="c-svg-copy">
+            <svg class="svg-copy" id="svgExitCopy" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg>
+        </div>
+
+    </div>
+
+    <!-- section copy code -->
+
+
+    <script type="module" src="../controllers/app.js"></script>
+
+    <!-- jQuery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Toastr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+</body>
+
+</html>

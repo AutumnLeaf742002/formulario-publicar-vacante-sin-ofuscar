@@ -1,0 +1,303 @@
+body{
+
+    background-color: var(--color_fondo);
+
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow-x: hidden;
+
+}
+
+
+
+html{
+
+
+
+  font-size: 18px;
+
+}
+
+
+
+header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0.5555555rem;
+
+    background-color: var(--color_principal);
+
+  }
+
+  
+
+  .logo-container img {
+
+    height: 2.22222222222rem;
+
+  }
+
+  
+
+  .logout-container {
+
+    text-align: right;
+
+  }
+
+  
+
+  .logout-button {
+
+    min-width: 5.5555555556rem;
+    min-height: 1.77777777778rem;
+
+    padding: 0.444444rem 0.88888888rem;
+
+    background-color: var(--color_gris);
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 0.22222222rem;
+
+    cursor: pointer;
+
+  }
+
+/* Estilos para el menú */
+
+.menu {
+
+    display: flex;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 2.22222222rem;
+
+    gap: 1.1111111rem;
+
+  }
+
+  
+
+  .menu-item {
+
+    padding: 0.55555555rem;
+
+    background-color: var(--color_naranja_claro);
+
+    color: var(--color_blanco);
+
+    cursor: pointer;
+
+    transition: all, 0.1s;
+
+    border-radius: 5px;
+
+  }
+
+  
+
+  /* Estilos para las vacantes */
+
+  .vacantes-container {
+
+    display: none;
+
+    margin-top: 1.11111111rem;
+
+  }
+
+  
+
+  .vacantes-container.show {
+
+    display: block;
+
+  }
+
+  .vacantes-list{
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.5555555rem;
+
+  }  
+
+  .vacantes-list li {
+
+    width: 100%;
+
+    background-color: var(--color_blanco);
+
+    padding: 1.1111111rem;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .vacantes-list li h3{
+
+    width: 60%;
+    overflow-wrap: break-word;
+  }
+
+  .view-button {
+
+    width: 5.5555555556rem;
+
+    height: 1.777777777rem;
+
+    padding: 0.4444444rem 0.888888888rem;
+
+    background-color: var(--color_gris);
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+  }
+
+
+
+  .menu-vacantes{
+
+
+
+    margin: 1.11111111rem auto 0px auto;
+
+    border-radius: 0.55555555rem;
+
+    width: 98%;
+
+  }
+
+
+
+  .type-vacante{
+
+
+
+    text-align: center;
+
+    margin-bottom: 0.55555555rem;
+
+  }
+
+
+
+  footer {
+
+    background-color: var(--color_gris); 
+
+    color: var(--color_blanco);
+
+    padding: 1.11111111rem 0;
+
+    text-align: center;
+
+    justify-self: flex-end;
+
+    position: absolute;
+
+    width: 100%;
+
+    top: 100%;
+
+    margin-top: 20px;
+
+  }
+
+  
+
+  .pie-de-pagina {
+
+    max-width: 100%; 
+
+    margin: 0 auto;
+
+  }
+
+  
+
+  p {
+
+    margin: 0;
+
+  }
+
+
+
+  /* mobile design */
+
+
+
+@media screen and (max-width: 550px){
+
+    
+
+  body::-webkit-scrollbar{
+
+
+
+    display: none;
+
+  }
+
+
+
+  html{
+
+
+
+      font-size: 14px;
+
+  }
+
+
+
+}
+
+
+
+@media screen and (max-width: 400px){
+
+
+
+  html{
+
+
+
+      font-size: 12px;
+
+    }
+
+
+
+}
